@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form #userForm="ngForm" (ngSubmit)="regUser(userForm.value)" >
+                <div class="form-row">
+                <div class="col-sm-6"></div>
+                  <div class="form-group">
+                    <label for="inputEmail4">Name</label>
+                    <input type="Name" ngModel class="form-control" id="Name" placeholder="Email" >
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword4">Email</label>
+                    <input type="Email" ngModel class="form-control" id="Email" placeholder="Email" >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Password</label>
+                  <input type="Password" ngModel class="form-control" id="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Telephone</label>
+                  <input type="Tel" ngModel class="form-control" id="Tel" placeholder="Telephone">
+                </div>
+                
+                <!-- <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div> -->
+                
+                <button type="submit" class="btn btn-primary">Sign in</button> 
+                <button onclick="deleteUser()" class="btn btn-primary">Delete</button>
+                <button onclick="deleteUser()" class="btn btn-primary">Update</button>
+              </form>
+        </div>
+    </div>    
+</div>
+
